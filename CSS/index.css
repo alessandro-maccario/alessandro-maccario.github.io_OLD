@@ -7,6 +7,7 @@ html {
 }
 
 body {
+	min-height: 100vh;
 	margin: 0px;
 	/*background-color: #2E3440;*/
 	font-size: small;
@@ -235,7 +236,7 @@ body {
 
 /*---- CSS for different devices ----*/
 
-@media screen and (min-width: 360) and (max-width: 640) {
+@media only screen and (max-width: 640px) {
 
 		body {
 			margin: 0px;
