@@ -236,6 +236,19 @@ body {
   and (device-width: 360px)
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 2) {
+		body {
+			margin: 0px;
+			/*background-color: #2E3440;*/
+			font-size: small;
+			/* Good to scaling if the user want resizing the page.
+		  If you want to change the entire
+		  body font (like to "medium", or "large") you have
+		  only to change this and the rest of the page will follow */
+			background-image: url("../Images/background_opaco.png");
+		  background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
 
 }
 
@@ -271,4 +284,35 @@ body {
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
+}
+
+
+
+
+/* ----------- HTC One ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
 }
