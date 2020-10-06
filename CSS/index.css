@@ -278,5 +278,10 @@ img {
 			justify-content: center;
 			align-items: center;
 		}
+		
+		#quotation p {
+			justify-content: center;
+			align-items: center;
+		}
 
 }
