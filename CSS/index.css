@@ -236,7 +236,7 @@ body {
 
 /*---- CSS for different devices ----*/
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
 
 		body {
 			margin: 0px;
@@ -249,6 +249,7 @@ body {
 		  body font (like to "medium", or "large") you have
 		  only to change this and the rest of the page will follow */
 			background-image: url("../Images/Forest_above.jpg");
+			-webkit-background-size: 50%;
 		  background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
