@@ -248,20 +248,11 @@ body {
 		  If you want to change the entire
 		  body font (like to "medium", or "large") you have
 		  only to change this and the rest of the page will follow */
-			background-image: url("../Images/background_opaco.png");
+			background-image: url("../Images/Forest_above.jpg");
 		  background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
 
-		#my_name {
-			grid-area: b;
-			display: flex;
-		  color: white;
-		  font-size: 250%;
-			font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
-			justify-content: center;
-			align-items: center;
-		}
 
 }
