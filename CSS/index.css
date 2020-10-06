@@ -20,6 +20,10 @@ body {
 	background-attachment: fixed;
 }
 
+img {
+	max-width: 100%;
+}
+
 /* Main container*/
 #main_container {
   display: grid;
@@ -236,6 +240,10 @@ body {
   and (device-width: 360px)
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 2) {
+
+		img {
+			max-width: 100%;
+		}
 
 		body {
 			margin: 0px;
