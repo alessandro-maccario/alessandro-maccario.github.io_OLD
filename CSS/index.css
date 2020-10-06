@@ -1,0 +1,274 @@
+/* Main */
+html {
+	/* In this way you let the html to figure out
+	the correct margin to have to the left and to the right */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	margin: 0px;
+	/*background-color: #2E3440;*/
+	font-size: small;
+	/* Good to scaling if the user want resizing the page.
+  If you want to change the entire
+  body font (like to "medium", or "large") you have
+  only to change this and the rest of the page will follow */
+	background-image: url("../Images/background_opaco.png");
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Main container*/
+#main_container {
+  display: grid;
+	/* With margin top 50px you distanciate all the content */
+	margin-top: 50px;
+	/* Create two columns with different areas*/
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(3, 33.33%);
+	grid-template-areas:
+	'a'
+	'b'
+	'c'
+	'd'
+	'e'
+	'f';
+	/* Create a space between the lines */
+	grid-row-gap: 12px;
+	/* It justify the grid to the center */
+	/* justify-items: center; */
+}
+
+/* First row*/
+#this_is_me {
+  grid-area: a;
+	/* Create the flex item: i.e. your photo */
+	display: flex;
+	border-width: 0px;
+	border-style: solid;
+  border-color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+#my_name {
+	grid-area: b;
+	display: flex;
+  color: white;
+  font-size: 250%;
+	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+	border-width: 0px;
+	border-style: solid;
+  border-color: white;
+	justify-content: center;
+	align-items: center;
+	margin-top: -30px;
+	margin-bottom: 30px;
+}
+
+/* Second row*/
+#social_profile {
+	grid-area: c;
+	display: flex;
+	border-width: 0px;
+	border-style: solid;
+  border-color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+#social_profile #linkedin_logo {
+	padding-right: 15px;
+}
+
+#social_profile #github_logo {
+	padding-right: 15px;
+}
+
+
+#social_profile #linkedin_logo:hover {
+	/* The transition last for 0.4s and you rotate the linkedin logo */
+	transition: 0.4s;
+	transform: rotate(360deg);
+}
+
+#social_profile #github_logo:hover {
+	/* The transition last for 0.4s and you rotate the linkedin logo */
+	transition: 0.4s;
+	transform: rotate(360deg);
+}
+
+#social_profile #whatsapp_logo:hover {
+	/* The transition last for 0.4s and you rotate the linkedin logo */
+	transition: 0.4s;
+	transform: rotate(360deg);
+}
+
+#quotation {
+	grid-area: d;
+	display: flex;
+	color: white;
+  font-size: 110%;
+	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+	border-width: 0px;
+	border-style: solid;
+  border-color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+#author {
+	grid-area: e;
+	display: flex;
+	color: white;
+	font-size: 100%;
+	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+	border-width: 0px;
+	border-style: solid;
+	border-color: white;
+	justify-content: center;
+	margin-top: -35px;
+}
+
+/* Third row*/
+#link_other_pages	{
+	grid-area: f;
+	display: flex;
+	color: white;
+	font-size: 150%;
+	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+	border-width: 0px;
+	border-style: solid;
+  border-color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+#link_other_pages #projects {
+	/* Create a space between the button page */
+	padding-left: 35px;
+}
+
+#link_other_pages #about {
+	font-size: 130%;
+}
+
+#link_other_pages #projects {
+	font-size: 130%;
+}
+
+
+/* Bob effect for contacts logos */
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+/*---- CSS for different devices ----*/
+
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/*---- Media Queries for laptops ----*/
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+}
