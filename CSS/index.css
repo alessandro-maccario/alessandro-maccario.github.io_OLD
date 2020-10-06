@@ -236,7 +236,7 @@ body {
 
 /*---- CSS for different devices ----*/
 
-@media only screen and (max-width: 384px) {
+@media only screen and (max-width: 360px) {
 
 		body {
 			margin: 0px;
