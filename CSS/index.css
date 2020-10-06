@@ -20,10 +20,6 @@ body {
 	background-attachment: fixed;
 }
 
-img {
-	max-width: 100%;
-}
-
 /* Main container*/
 #main_container {
   display: grid;
@@ -239,16 +235,7 @@ img {
 
 /*---- CSS for different devices ----*/
 
-/* ----------- Galaxy S3 ----------- */
-/* Portrait and Landscape */
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 2) {
-
-		img {
-			max-width: 100%;
-		}
+@media screen and (min-width: 780px) {
 
 		body {
 			margin: 0px;
@@ -264,24 +251,6 @@ img {
 		  background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-		}
-
-		#quotation {
-			grid-area: d;
-			display: flex;
-			color: white;
-		  font-size: 110%;
-			font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
-			border-width: 0px;
-			border-style: solid;
-		  border-color: white;
-			justify-content: center;
-			align-items: center;
-		}
-		
-		#quotation p {
-			justify-content: center;
-			align-items: center;
 		}
 
 }
