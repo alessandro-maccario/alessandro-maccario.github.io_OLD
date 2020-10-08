@@ -15,7 +15,7 @@ body {
   If you want to change the entire
   body font (like to "medium", or "large") you have
   only to change this and the rest of the page will follow */
-	background-image: url("/Images/background.jpg");
+	background-image: url("Images/background.jpg");
   background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
