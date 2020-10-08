@@ -15,7 +15,7 @@ body {
   If you want to change the entire
   body font (like to "medium", or "large") you have
   only to change this and the rest of the page will follow */
-	background-image: url("Images/background.jpg");
+	background-image: url("/Images/background.jpg");
   background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -58,11 +58,11 @@ body {
 	border-style: solid;
   border-color: white;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #my_name {
@@ -79,11 +79,11 @@ body {
 	border-style: solid;
   border-color: white;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: -30px;
 	margin-bottom: 30px;
 }
@@ -100,11 +100,11 @@ body {
 	border-style: solid;
   border-color: white;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #social_profile #linkedin_logo {
@@ -122,8 +122,8 @@ body {
 	-o-transition: 0.4s;
 	transition: 0.4s;
 	-webkit-transform: rotate(360deg);
-	-ms-transform: rotate(360deg);
-	transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 #social_profile #github_logo:hover {
@@ -132,8 +132,8 @@ body {
 	-o-transition: 0.4s;
 	transition: 0.4s;
 	-webkit-transform: rotate(360deg);
-	-ms-transform: rotate(360deg);
-	transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 #social_profile #whatsapp_logo:hover {
@@ -142,8 +142,8 @@ body {
 	-o-transition: 0.4s;
 	transition: 0.4s;
 	-webkit-transform: rotate(360deg);
-	-ms-transform: rotate(360deg);
-	transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 #quotation {
@@ -160,20 +160,20 @@ body {
 	border-style: solid;
   border-color: white;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #quotation p {
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	 align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #author {
@@ -190,8 +190,8 @@ body {
 	border-style: solid;
 	border-color: white;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: -35px;
 }
 
@@ -320,4 +320,7 @@ body {
 			background-attachment: fixed;
 		}
 
+		#this_is_me {
+
+		}
 }
