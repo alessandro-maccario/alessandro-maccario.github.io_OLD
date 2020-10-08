@@ -210,11 +210,11 @@ body {
 	border-style: solid;
   border-color: white;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	 align-items: center;
 }
 
 #link_other_pages #projects {
@@ -302,7 +302,7 @@ body {
 
 /*---- CSS for different devices ----*/
 
-@media only screen and (min-width: 360px) {
+@media (min-width: 360px) {
 
 		body {
 			margin: 0px;
@@ -315,7 +315,7 @@ body {
 		  body font (like to "medium", or "large") you have
 		  only to change this and the rest of the page will follow */
 			background-image: url("../Images/Forest_above.jpg");
-		 background-size: cover;
+		  background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
