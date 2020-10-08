@@ -302,7 +302,7 @@ body {
 
 /*---- CSS for different devices ----*/
 
-@media (min-width: 360px) {
+@media (max-width: 360px) {
 
 		body {
 			margin: 0px;
@@ -320,4 +320,7 @@ body {
 			background-attachment: fixed;
 		}
 
+		#this_is_me {
+
+		}
 }
