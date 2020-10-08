@@ -23,13 +23,16 @@ body {
 
 /* Main container*/
 #main_container {
+  display: -ms-grid;
   display: grid;
 	/* With margin top 50px you distanciate all the content */
 	margin-top: 50px;
 	/* Create two columns with different areas*/
+	-ms-grid-columns: 100%;
 	grid-template-columns: 100%;
+	-ms-grid-rows: 33.33% 12px 33.33% 12px 33.33%;
 	grid-template-rows: repeat(3, 33.33%);
-	grid-template-areas:
+	    grid-template-areas:
 	'a'
 	'b'
 	'c'
@@ -44,18 +47,30 @@ body {
 
 /* First row*/
 #this_is_me {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: a;
 	/* Create the flex item: i.e. your photo */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	border-width: 0px;
 	border-style: solid;
   border-color: white;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #my_name {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
 	grid-area: b;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
   color: white;
   font-size: 250%;
@@ -63,21 +78,33 @@ body {
 	border-width: 0px;
 	border-style: solid;
   border-color: white;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: -30px;
 	margin-bottom: 30px;
 }
 
 /* Second row*/
 #social_profile {
+	-ms-grid-row: 5;
+	-ms-grid-column: 1;
 	grid-area: c;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	border-width: 0px;
 	border-style: solid;
   border-color: white;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #social_profile #linkedin_logo {
@@ -91,24 +118,40 @@ body {
 
 #social_profile #linkedin_logo:hover {
 	/* The transition last for 0.4s and you rotate the linkedin logo */
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
 	transition: 0.4s;
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 #social_profile #github_logo:hover {
 	/* The transition last for 0.4s and you rotate the linkedin logo */
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
 	transition: 0.4s;
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 #social_profile #whatsapp_logo:hover {
 	/* The transition last for 0.4s and you rotate the linkedin logo */
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
 	transition: 0.4s;
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 #quotation {
+	-ms-grid-row: 7;
+	-ms-grid-column: 1;
 	grid-area: d;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	color: white;
   font-size: 110%;
@@ -116,17 +159,29 @@ body {
 	border-width: 0px;
 	border-style: solid;
   border-color: white;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #quotation p {
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #author {
+	-ms-grid-row: 9;
+	-ms-grid-column: 1;
 	grid-area: e;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	color: white;
 	font-size: 100%;
@@ -134,13 +189,19 @@ body {
 	border-width: 0px;
 	border-style: solid;
 	border-color: white;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: -35px;
 }
 
 /* Third row*/
 #link_other_pages	{
+	-ms-grid-row: 11;
+	-ms-grid-column: 1;
 	grid-area: f;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	color: white;
 	font-size: 150%;
@@ -148,8 +209,12 @@ body {
 	border-width: 0px;
 	border-style: solid;
   border-color: white;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #link_other_pages #projects {
@@ -214,7 +279,8 @@ body {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
@@ -249,8 +315,7 @@ body {
 		  body font (like to "medium", or "large") you have
 		  only to change this and the rest of the page will follow */
 			background-image: url("../Images/Forest_above.jpg");
-			-webkit-background-size: 50%;
-		  background-size: cover;
+		 background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
