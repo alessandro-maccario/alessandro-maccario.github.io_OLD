@@ -1,49 +1,49 @@
 /* Main */
 html {
-	/* In this way you let the html to figure out
+  /* In this way you let the html to figure out
 	the correct margin to have to the left and to the right */
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
-	min-height: 100vh;
-	margin: 0px;
-	/*background-color: #2E3440;*/
-	font-size: small;
-	/* Good to scaling if the user want resizing the page.
+  min-height: 100vh;
+  margin: 0px;
+  /*background-color: #2E3440;*/
+  font-size: small;
+  /* Good to scaling if the user want resizing the page.
   If you want to change the entire
   body font (like to "medium", or "large") you have
   only to change this and the rest of the page will follow */
-	background-image: url("../Images/background.jpg");
+  background-image: url("../Images/background.jpg");
   background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
 }
 
 /* Main container*/
 #main_container {
   display: -ms-grid;
   display: grid;
-	/* With margin top 50px you distanciate all the content */
-	margin-top: 50px;
-	/* Create two columns with different areas*/
-	-ms-grid-columns: 100%;
-	grid-template-columns: 100%;
-	-ms-grid-rows: 33.33% 12px 33.33% 12px 33.33%;
-	grid-template-rows: repeat(3, 33.33%);
-	    grid-template-areas:
-	'a'
-	'b'
-	'c'
-	'd'
-	'e'
-	'f';
-	/* Create a space between the lines */
-	grid-row-gap: 12px;
-	/* It justify the grid to the center */
-	/* justify-items: center; */
+  /* With margin top 50px you distanciate all the content */
+  margin-top: 50px;
+  /* Create two columns with different areas*/
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -ms-grid-rows: 33.33% 12px 33.33% 12px 33.33%;
+  grid-template-rows: repeat(3, 33.33%);
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f";
+  /* Create a space between the lines */
+  grid-row-gap: 12px;
+  /* It justify the grid to the center */
+  /* justify-items: center; */
 }
 
 /* First row*/
@@ -51,197 +51,196 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
-	/* Create the flex item: i.e. your photo */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	border-width: 0px;
-	border-style: solid;
+  /* Create the flex item: i.e. your photo */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-width: 0px;
+  border-style: solid;
   border-color: white;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #my_name {
-	-ms-grid-row: 3;
-	-ms-grid-column: 1;
-	grid-area: b;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   font-size: 300%;
-	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
-	border-width: 0px;
-	border-style: solid;
+  font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+  border-width: 0px;
+  border-style: solid;
   border-color: white;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	margin-top: 0px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 0px;
 }
 
 /* Second row*/
 #social_profile {
-	-ms-grid-row: 5;
-	-ms-grid-column: 1;
-	grid-area: c;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	border-width: 0px;
-	border-style: solid;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-width: 0px;
+  border-style: solid;
   border-color: white;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #social_profile #linkedin_logo {
-	padding-right: 15px;
+  padding-right: 15px;
 }
 
 #social_profile #github_logo {
-	padding-right: 15px;
+  padding-right: 15px;
 }
 
 #social_profile #whatsapp_logo {
-	padding-right: 15px;
+  padding-right: 15px;
 }
 
 #social_profile #linkedin_logo:hover {
-	/* The transition last for 0.4s and you rotate the linkedin logo */
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	-webkit-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	        transform: rotate(360deg);
+  /* The transition last for 0.4s and you rotate the linkedin logo */
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 #social_profile #github_logo:hover {
-	/* The transition last for 0.4s and you rotate the linkedin logo */
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	-webkit-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	        transform: rotate(360deg);
+  /* The transition last for 0.4s and you rotate the linkedin logo */
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 #social_profile #whatsapp_logo:hover {
-	/* The transition last for 0.4s and you rotate the linkedin logo */
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	-webkit-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	        transform: rotate(360deg);
+  /* The transition last for 0.4s and you rotate the linkedin logo */
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 #social_profile #telegram_logo:hover {
-	/* The transition last for 0.4s and you rotate the linkedin logo */
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	-webkit-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	        transform: rotate(360deg);
+  /* The transition last for 0.4s and you rotate the linkedin logo */
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 #quotation {
-	-ms-grid-row: 7;
-	-ms-grid-column: 1;
-	grid-area: d;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	color: white;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
   font-size: 110%;
-	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
-	border-width: 0px;
-	border-style: solid;
+  font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+  border-width: 0px;
+  border-style: solid;
   border-color: white;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #quotation p {
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #author {
-	-ms-grid-row: 9;
-	-ms-grid-column: 1;
-	grid-area: e;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	color: white;
-	font-size: 100%;
-	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
-	border-width: 0px;
-	border-style: solid;
-	border-color: white;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 100%;
+  font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+  border-width: 0px;
+  border-style: solid;
+  border-color: white;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* Third row*/
-#link_other_pages	{
-	-ms-grid-row: 11;
-	-ms-grid-column: 1;
-	grid-area: f;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	color: white;
-	font-size: 150%;
-	font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
-	border-width: 0px;
-	border-style: solid;
+#link_other_pages {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 150%;
+  font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+  border-width: 0px;
+  border-style: solid;
   border-color: white;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	 align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #link_other_pages #projects {
-	/* Create a space between the button page */
-	padding-left: 35px;
+  /* Create a space between the button page */
+  padding-left: 35px;
 }
 
 #link_other_pages #about {
-	font-size: 130%;
+  font-size: 130%;
 }
 
 #link_other_pages #projects {
-	font-size: 130%;
+  font-size: 130%;
 }
-
 
 /* Bob effect for contacts logos */
 
@@ -292,15 +291,17 @@ body {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;
@@ -311,25 +312,22 @@ body {
   animation-direction: normal, alternate;
 }
 
-
 /*---- CSS for different devices ----*/
 
 @media (max-width: 360px) {
-
-		body {
-			margin: 0px;
-			width: 100%;
-			height: 100vh;
-			text-align: center;
-			font-size: small;
-			/* Good to scaling if the user want resizing the page.
+  body {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: small;
+    /* Good to scaling if the user want resizing the page.
 		  If you want to change the entire
 		  body font (like to "medium", or "large") you have
 		  only to change this and the rest of the page will follow */
-			background-image: url("../Images/Forest_above.jpg");
-		  background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-
+    background-image: url("../Images/Forest_above.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
