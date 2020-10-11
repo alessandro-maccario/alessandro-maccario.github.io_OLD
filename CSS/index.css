@@ -116,6 +116,9 @@ body {
 	padding-right: 15px;
 }
 
+#social_profile #whatsapp_logo {
+	padding-right: 15px;
+}
 
 #social_profile #linkedin_logo:hover {
 	/* The transition last for 0.4s and you rotate the linkedin logo */
@@ -138,6 +141,16 @@ body {
 }
 
 #social_profile #whatsapp_logo:hover {
+	/* The transition last for 0.4s and you rotate the linkedin logo */
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+
+#social_profile #telegram_logo:hover {
 	/* The transition last for 0.4s and you rotate the linkedin logo */
 	-webkit-transition: 0.4s;
 	-o-transition: 0.4s;
