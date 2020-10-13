@@ -95,7 +95,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: white;
   -webkit-box-pack: center;
