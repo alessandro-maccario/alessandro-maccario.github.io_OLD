@@ -25,7 +25,6 @@ body {
 /* Main container*/
 #main_container {
   display: -ms-grid;
-  display: grid;
   /* With margin top 50px you distanciate all the content */
   margin-top: 50px;
   /* Create two columns with different areas*/
@@ -67,7 +66,7 @@ body {
 }
 
 #my_name {
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: b;
   display: -webkit-box;
@@ -90,13 +89,13 @@ body {
 
 /* Second row*/
 #social_profile {
-  -ms-grid-row: 5;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-width: 0px;
+  border-width: 1px;
   border-style: solid;
   border-color: white;
   -webkit-box-pack: center;
@@ -160,7 +159,7 @@ body {
 }
 
 #quotation {
-  -ms-grid-row: 7;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: d;
   display: -webkit-box;
@@ -190,7 +189,7 @@ body {
 }
 
 #author {
-  -ms-grid-row: 9;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: e;
   display: -webkit-box;
@@ -209,7 +208,7 @@ body {
 
 /* Third row*/
 #link_other_pages {
-  -ms-grid-row: 11;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: f;
   display: -webkit-box;
