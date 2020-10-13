@@ -190,20 +190,13 @@ body {
 }
 
 #author {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: e;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
-  font-size: 100%;
   font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
   border-width: 0px;
   border-style: solid;
   border-color: white;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
