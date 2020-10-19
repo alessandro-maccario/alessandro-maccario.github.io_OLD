@@ -32,21 +32,9 @@ body {
   -ms-grid-rows: 33.33% 0px 33.33% 0px 33.33%;
   grid-template-rows: repeat(3, 33.33%);
   grid-template-areas:
-    "a";
+    'a b';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Third row*/
 #link_other_pages {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -67,7 +55,17 @@ body {
 }
 
 
+#description {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  display: flex;
+}
 
+#description p {
+  color: white;
+  font-size: 120%;
+}
 
 
 

@@ -354,7 +354,10 @@ body {
 }
 
 
-
+.linkers {
+  text-decoration: none;
+  color: white;
+}
 
 
 
