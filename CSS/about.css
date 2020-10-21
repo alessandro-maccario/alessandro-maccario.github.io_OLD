@@ -29,33 +29,38 @@ body {
   /*-ms-grid-columns: [first_column] 30% [second_column] 70%;*/
   /*-ms-grid-rows: [first_row_top] 33.33% [second_row_center] 33.33% [third_row_bottom] 33.33%;*/
   display: grid;
-  grid-template-columns: [main-start] 1fr [content-start] 2fr [main-end];
-  grid-template-rows: [main-start] 33% [content-start] 33% [content-end] 33% [main-end];
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 33% 0px 33% 0px 33%;
+  grid-template-areas:
+    'passion skills'
+    'mainPassion mainSkills'
+    'contact_links';
 }
 
 #description_about {
-
   grid-column-start: main-start;
   grid-row-start: main-start;
-  grid-row-end: main-end;
-
+  height: 100vh;
   display: flex;
-  background-color: #2e3440;
+  background-color: #d8dee9;
 }
 
 #description_about p {
-  color: white;
-  font-size: 120%;
+  color: #5e81ac;
+  font-size: 300%;
+  border-color: black;
+  border-style: solid;
+  border-width: medium;
+  margin: 0px;
 }
 
 #skills_space_about {
   grid-column-start: content-start;
   grid-row-start: main-start;
-
+  height: 100vh;
   display: flex;
-  color: black;
-  font-size: 120%;
-  background-color: white;
+  color: white;
+  font-size: 200%;
 }
 
 
