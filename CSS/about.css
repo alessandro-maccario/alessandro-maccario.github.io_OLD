@@ -22,33 +22,40 @@ body {
   text-align: center;
 }
 
-#main_container {
-  display: grid;
+#main_container_about {
+  /*display: -ms-grid;*/
   /* With margin top 50px you distanciate all the content */
   /* Create two columns with different areas*/
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 70% 30%;
-  grid-template-areas:
-    'a b';
+  /*-ms-grid-columns: [first_column] 30% [second_column] 70%;*/
+  /*-ms-grid-rows: [first_row_top] 33.33% [second_row_center] 33.33% [third_row_bottom] 33.33%;*/
+  display: grid;
+  grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+  grid-template-rows: [main-start] 100px [content-start] 100px [content-end] 100px [main-end];
 }
 
-#description {
-  grid-area: a;
+#description_about {
+
+  grid-column-start: main-start;
+  grid-row-start: main-start;
+  grid-row-end: main-end;
+
   display: flex;
   background-color: #2e3440;
-  height: 100vh;
 }
 
-#description p {
+#description_about p {
   color: white;
   font-size: 120%;
 }
 
-#skills_space {
-  grid-area: b;
+#skills_space_about {
+  grid-column-start: content-start;
+  grid-row-start: main-start;
+
   display: flex;
-  color: white;
+  color: black;
   font-size: 120%;
+  background-color: white;
 }
 
 
