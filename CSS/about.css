@@ -30,7 +30,7 @@ body {
   /*-ms-grid-rows: [first_row_top] 33.33% [second_row_center] 33.33% [third_row_bottom] 33.33%;*/
   display: grid;
   grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
-  grid-template-rows: [main-start] 100px [content-start] 100px [content-end] 100px [main-end];
+  grid-template-rows: [main-start] 33% [content-start] 33% [content-end] 33% [main-end];
 }
 
 #description_about {
