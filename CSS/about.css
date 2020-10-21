@@ -29,7 +29,7 @@ body {
   /*-ms-grid-columns: [first_column] 30% [second_column] 70%;*/
   /*-ms-grid-rows: [first_row_top] 33.33% [second_row_center] 33.33% [third_row_bottom] 33.33%;*/
   display: grid;
-  grid-template-columns: [main-start] 1fr [content-start] 1fr [main-end];
+  grid-template-columns: [main-start] 1fr [content-start] 2fr [main-end];
   grid-template-rows: [main-start] 33% [content-start] 33% [content-end] 33% [main-end];
 }
 
