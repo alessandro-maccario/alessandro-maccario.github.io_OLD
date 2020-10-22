@@ -188,7 +188,7 @@ body {
   justify-content: center;
 }
 
-/* Third row*/
+
 #link_other_pages {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -211,15 +211,13 @@ body {
 #link_other_pages #projects {
   /* Create a space between the button page */
   margin-left: 30px;
+  font-size: 130%;
 }
 
 #link_other_pages #about {
   font-size: 130%;
 }
 
-#link_other_pages #projects {
-  font-size: 130%;
-}
 
 /* Bob effect for contacts logos */
 
