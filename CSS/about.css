@@ -35,7 +35,7 @@ body {
 }
 
 #main_container_about > #header_about {
-  background-color: grey;
+  /*background-color: grey;*/
   grid-column: 1/4;
 }
 #main_container_about > #social_linkers_about {
@@ -50,4 +50,37 @@ body {
   background-color: #C0C0C0;
   grid-column: 2/4;
   grid-row: 3/7;
+}
+
+#header_about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Courier Prime", monospace, "EB Garamond", Times, sans-serif;
+}
+
+#header_about > #header_data_science {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid black;
+  width: auto;
+  font-size: 200%;
+}
+
+#header_about > #header_programming {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: auto;
+  font-size: 200%;
+}
+
+#header_about > #header_blog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  width: auto;
+  font-size: 200%;
 }
