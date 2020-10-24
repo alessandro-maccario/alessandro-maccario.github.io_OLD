@@ -1,0 +1,45 @@
+/* Variables */
+
+:root {
+  /* se volessi cambiare il colore di seguito in tutta la pagina
+  lo fai una sola volta in questo caso */
+  --primary: #FFC636;
+  --secondary: rgb(46,52,64);
+}
+
+/* reset (browser styles) */
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+/* base styles */
+
+body {
+  background: var(--secondary);
+}
+
+
+/* Mobile Styles */
+
+
+/* Small Tablet Styles */
+
+@media screen and (min-width: 620px) {
+
+}
+
+/* Large Tables and (small) laptops styles */
+@media screen and (min-width: 960px) {
+
+}
+
+/* Desktop Styles*/
+@media screen and (min-width: 1200px) {
+
+}
