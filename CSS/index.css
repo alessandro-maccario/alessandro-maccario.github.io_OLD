@@ -26,6 +26,8 @@ li{
 /* base styles */
 
 body {
+  /* Ricorda: di default il font size del
+  body è 16px */
   background: var(--secondary);
   overflow-x: hidden;
   font-family: 'Rubik Regular';
@@ -62,8 +64,19 @@ p,a,li {
 }
 
 h1, h3 {
-  font-size: 1.2em;
+  /* quando si lavora con css responsive è molto più semplice
+  lavorare con un body size degli elementi tipo h1 o h2 e poi
+  andare a modificare i singoli elementi con em rispetto al valore
+  dato nel body. Così facendo in ciascuna media query sarà
+  sufficiente andare a modificare con em rispetto che singolarmente
+  definire un tot di pixel differenti. */
+  font-size: 1.5em;
 }
+
+.leading {
+  font-size: 1.1em;
+}
+
 
 /* Mobile Styles */
 
@@ -77,9 +90,23 @@ h1, h3 {
 /* Large Tables and (small) laptops styles */
 @media screen and (min-width: 960px) {
 
+  body {
+    /* Aumenta il font size dato che aumenti le dimensioni
+    dello schermo. Vai a definire un DEFAULT font size */
+    font-size: 18px;
+  }
+
 }
 
 /* Desktop Styles*/
 @media screen and (min-width: 1200px) {
+
+    body {
+      /* Aumenta il font size dato che aumenti le dimensioni
+      dello schermo. Vai a definire un DEFAULT font size che
+      verrà moltiplicato col font size della versione Mobile
+      per esempio, ottenendo 1.5*20px ad esempio. */
+      font-size: 20px:
+    }
 
 }
