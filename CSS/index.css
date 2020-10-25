@@ -3,8 +3,9 @@
 :root {
   /* se volessi cambiare il colore di seguito in tutta la pagina
   lo fai una sola volta in questo caso */
-  --primary: #FFC636;
-  --secondary: rgb(46,52,64);
+  --primary: #4287f5;
+  --secondary: rgb(255, 255, 255);
+  --third: rgb(0, 0, 0);
 }
 
 /* reset (browser styles) */
@@ -22,6 +23,22 @@ li{
 
 body {
   background: var(--secondary);
+  overflow-x: hidden;
+}
+
+.button {
+  background: none;
+  border: 1px solid var(--third);
+  border-radius: 15px 15px;
+  color: var(--third);
+  padding: 6px 12px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.button:hover {
+  text-decoration: underline;
+  background: var(--primary);
 }
 
 
