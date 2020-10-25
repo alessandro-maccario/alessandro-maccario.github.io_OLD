@@ -2,9 +2,13 @@
 
 :root {
   /* se volessi cambiare il colore di seguito in tutta la pagina
-  lo fai una sola volta in questo caso */
+  lo fai una sola volta in questo caso. Se usi un colore ad esempio
+  più volte nel testo allora ha senso usare una variabile, se lo usi
+  una sola volta no, è sufficiente scriversi ciò che si usa dove lo si vuole
+  usare senza la creazione di una variabile apposita. */
+
   --primary: #4287f5;
-  --secondary: rgb(255, 255, 255);
+  --secondary: #D8DEE9;
   --third: rgb(0, 0, 0);
 }
 
@@ -24,6 +28,7 @@ li{
 body {
   background: var(--secondary);
   overflow-x: hidden;
+  font-family: 'Rubik Regular';
 }
 
 .button {
@@ -41,6 +46,24 @@ body {
   background: var(--primary);
 }
 
+/* Fonts rules */
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('Fonts/Rubik/Rubik-Regular.ttf');
+  font-weight: bolder;
+}
+
+h1, h2, h3, h4 {
+  color: #2E3440;
+}
+
+p,a,li {
+  color: rgb(59, 66, 82);
+}
+
+h1, h3 {
+  font-size: 1.2em;
+}
 
 /* Mobile Styles */
 
