@@ -110,3 +110,20 @@ h1, h3 {
     }
 
 }
+
+.site_nav {
+  display: inline;
+}
+
+.site_nav a {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.contacts {
+  display: inline;
+}
+
+.contacts a {
+  padding-right: 10px;
+}
