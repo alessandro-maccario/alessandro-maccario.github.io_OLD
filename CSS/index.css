@@ -188,4 +188,12 @@ h1 {
       color: white;
     }
 
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .my_name {
+      grid-column: 1/3;
+    }
 }
