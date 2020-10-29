@@ -179,19 +179,36 @@ h1 {
     h1 {
       font-size: 2.5em;
       color: white;
-      border: 1px solid black;
+      /* border: 1px solid black; */
     }
 
     .nav_item {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      border: 1px solid black;
+      /* border: 1px solid black; */
       grid-gap: 0px;
+      margin-bottom: 3%;
     }
 
-    #second_group {
+    /* Second main grid */
+    #second_grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: 2;
+      grid-column-gap: 5%;
     }
+
+    #just_me_photo {
+      grid-column: 1/2;
+      grid-row: 1;
+      /* border: 1px solid black; */
+    }
+
+    #social_contact {
+      grid-column: 1/2;
+      grid-row: 2;
+      /* border: 1px solid black; */
+    }
+
+
 }
