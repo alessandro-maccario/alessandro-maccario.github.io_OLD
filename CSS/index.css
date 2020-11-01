@@ -46,7 +46,6 @@ body {
 
 .button:hover {
   text-decoration: underline;
-  background: var(--primary);
 }
 
 /* Fonts rules */
@@ -209,5 +208,5 @@ h1 {
       grid-row: 2;
       /* border: 1px solid black; */
     }
-    
+
 }
