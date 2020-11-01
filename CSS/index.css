@@ -183,6 +183,8 @@ h3 {
       per esempio, ottenendo 1.5*20px ad esempio. */
       font-size: 20px;
       height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
 
@@ -193,7 +195,8 @@ h3 {
     }
 
     .nav_item {
-      display: grid;
+
+      /* display: grid; */
       grid-template-columns: repeat(4, 1fr);
       /* border: 1px solid black; */
       grid-gap: 0px;
@@ -221,14 +224,16 @@ h3 {
     }
 
     .footer {
-      border: 1px solid black;
-      min-height: 50px;
+      /* border: 1px solid black; */
+      margin-top: auto;
+      height: 50px;
     }
 
     .footer_items {
       display: flex;
       grid-column-gap: 1%;
       justify-content: center;
+
     }
 
 
