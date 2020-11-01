@@ -172,12 +172,17 @@ h3 {
 /* Desktop Styles*/
 @media screen and (min-width: 1200px) {
 
+    html {
+      height: 100vh;
+    }
+
     body {
       /* Aumenta il font size dato che aumenti le dimensioni
       dello schermo. Vai a definire un DEFAULT font size che
       verrà moltiplicato col font size della versione Mobile
       per esempio, ottenendo 1.5*20px ad esempio. */
       font-size: 20px;
+      height: 100vh;
     }
 
 
@@ -214,5 +219,17 @@ h3 {
       grid-row: 2;
       /* border: 1px solid black; */
     }
+
+    .footer {
+      border: 1px solid black;
+      min-height: 50px;
+    }
+
+    .footer_items {
+      display: flex;
+      grid-column-gap: 1%;
+      justify-content: center;
+    }
+
 
 }
