@@ -124,6 +124,7 @@ h3 {
   justify-content: center;
   text-align: center;
   align-items: center;
+  border: 1px solid black;
 }
 
 .skills {
