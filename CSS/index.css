@@ -92,7 +92,6 @@ h3 {
 
 .leading {
   font-size: 1.1em;
-  border: 1px solid black;
 }
 
 
@@ -172,6 +171,16 @@ h3 {
 }
 
 
+.footer {
+  margin-top: 10%;
+  height: 50px;
+}
+
+.footer_items {
+  display: flex;
+  grid-column-gap: 1%;
+  justify-content: center;
+}
 
 
 /* Mobile Styles */
@@ -241,13 +250,12 @@ h3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 2;
-      grid-column-gap: 5%;
+      grid-column-gap: 1%;
     }
 
     #just_me_photo {
       grid-column: 1/2;
       grid-row: 1;
-      border: 1px solid black;
     }
 
     #social_contact {
