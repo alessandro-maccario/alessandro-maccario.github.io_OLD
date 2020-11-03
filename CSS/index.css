@@ -221,14 +221,14 @@ h3 {
 @media screen and (min-width: 768px) {
 
   html {
-    height: 100vh;
+    height: auto;
   }
 
   body {
     /* Aumenta il font size dato che aumenti le dimensioni
     dello schermo. Vai a definire un DEFAULT font size */
     font-size: 18px;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -243,13 +243,16 @@ h3 {
     font-size: 2.5em;
   }
 
-
   p, a {
     font-size: 2em;
   }
 
+  #just_me_photo > img{
+    width: 35%;
+  }
+
   .nav_item {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .nav_item a {
@@ -285,7 +288,6 @@ h3 {
     font-size: 2.5em;
   }
 
-
   p, a {
     font-size: 2em;
   }
@@ -302,18 +304,18 @@ h3 {
 
 
 
-/* Large Tables and (small) laptops styles */
+/* Large Tables (iPad Pro) and (small) laptops styles */
 @media screen and (min-width: 1024px) {
 
   html {
-    height: 100vh;
+    height: auto;
   }
 
   body {
     /* Aumenta il font size dato che aumenti le dimensioni
     dello schermo. Vai a definire un DEFAULT font size */
     font-size: 18px;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -328,9 +330,14 @@ h3 {
     font-size: 2.5em;
   }
 
-
   p, a {
     font-size: 2em;
+  }
+
+  #just_me_photo > img{
+    /* Setting for only one dimension: the html will
+    figure it out the othe to scale the image correctly*/
+    width: 35%;
   }
 
   .nav_item {
