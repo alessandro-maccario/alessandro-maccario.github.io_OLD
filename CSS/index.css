@@ -263,14 +263,14 @@ h3 {
 @media screen and (min-width: 960px) {
 
   html {
-    height: 100%;
+    height: 100vh;
   }
 
   body {
     /* Aumenta il font size dato che aumenti le dimensioni
     dello schermo. Vai a definire un DEFAULT font size */
     font-size: 18px;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
