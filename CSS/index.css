@@ -196,7 +196,6 @@ h3 {
     height: 100vh;
   }
 
-
   body {
     /* Aumenta il font size dato che aumenti le dimensioni
     dello schermo. Vai a definire un DEFAULT font size */
@@ -252,7 +251,7 @@ h3 {
   }
 
   .nav_item {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .nav_item a {
@@ -307,9 +306,6 @@ h3 {
   }
 
 }
-
-
-
 
 /* Desktop Styles*/
 @media screen and (min-width: 1200px) {
