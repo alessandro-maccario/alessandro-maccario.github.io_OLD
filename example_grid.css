@@ -1,0 +1,43 @@
+html {
+  margin: 0px;
+}
+
+body {
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  grid-column-gap: 1%;
+}
+
+.grid_item {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid_item1 {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-column: 1/4;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-column: 1/4;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
