@@ -229,17 +229,17 @@ h3 {
   }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     color: white;
     /* border: 1px solid black; */
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   p, a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   #just_me_photo > img{
@@ -274,17 +274,17 @@ h3 {
   }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     color: white;
     /* border: 1px solid black; */
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   p, a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   #just_me_photo > img{
@@ -319,8 +319,25 @@ h3 {
       height: 100vh;
       display: flex;
       flex-direction: column;
+      background-repeat: repeat;
+      background-size: cover;
     }
 
+    /* reset (browser styles) */
+    body,p,a,ul,li{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    li{
+      list-style-type: none;
+    }
+
+    p {
+      font-family: 'Prompt', sans-serif;
+      font-size: 0.8em;
+    }
 
     h1 {
       font-size: 2.5em;
