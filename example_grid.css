@@ -3,7 +3,13 @@ html {
 }
 
 body {
+    margin: 0px;
+    padding: 0px;
+}
 
+
+li {
+  list-style-type: none;
 }
 
 .grid {
@@ -26,11 +32,18 @@ body {
 
 .grid_item1 {
   display: flex;
+  background-color: black;
   border: 1px solid rgba(0, 0, 0, 0.8);
   grid-column: 1/4;
+  grid-row: 1/9;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  background-image: url('Example_Images/hannah-troupe-0FQneB1VjaM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto;
 }
 
 .footer {
@@ -40,4 +53,11 @@ body {
   text-align: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.nav_class {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  flex-direction: column;
+  color: white;
 }
