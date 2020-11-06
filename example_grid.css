@@ -66,3 +66,46 @@ li {
   border: 1px solid rgba(255, 255, 255, 0.8);
   flex-direction: column;
 }
+
+
+
+
+
+
+
+/* Desktop Styles*/
+@media screen and (min-width: 1200px) {
+
+  html {
+    height: 100vh;
+  }
+
+  body {
+    /* Aumenta il font size dato che aumenti le dimensioni
+    dello schermo. Vai a definire un DEFAULT font size che
+    verrà moltiplicato col font size della versione Mobile
+    per esempio, ottenendo 1.5*20px ad esempio. */
+    font-size: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  /* reset (browser styles) */
+  body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  p {
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.8em;
+  }
+}
