@@ -6,7 +6,6 @@ html {
 body {
 	margin: 0px;
 	padding: 0px;
-	min-height: 100%;
 }
 
 .button_nav {
@@ -31,19 +30,10 @@ p {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, 1fr);
 	border: 1px solid black;
 	width: 100%;
-	height: 100vh;
-	grid-column-gap: 1%;
-}
-
-.grid_item {
-	display: flex;
-	border: 1px solid rgba(0, 0, 0, 0.8);
-	text-align: center;
-	flex-direction: column;
-	justify-content: center;
+	min-height: 50vh;
+	margin-bottom: 0;
 }
 
 .grid_item1 {
@@ -51,7 +41,6 @@ p {
 	background-color: black;
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	grid-column: 1/4;
-	grid-row: 1/4;
 	text-align: center;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -59,13 +48,10 @@ p {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	margin: 0px;
-	padding: 0px;
 }
 
 .grid_item2 {
 	display: flex;
-	grid-column: 1/4;
 	text-align: center;
 	flex-direction: column;
 	justify-content: center;
@@ -165,7 +151,6 @@ p {
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 1fr);
 		border: 1px solid black;
 		width: 100%;
 		height: 100vh;
@@ -183,14 +168,12 @@ p {
 		background-color: black;
 		border: 1px solid rgba(0, 0, 0, 0.8);
 		grid-column: 1/4;
-		grid-row: 1/3;
 		text-align: center;
 		flex-direction: column;
 		justify-content: flex-start;
 		background-image: url('Example_Images/hannah-troupe-0FQneB1VjaM-unsplash.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
-		height: auto;
 	}
 	.grid_item2 {
 		display: flex;
@@ -204,6 +187,8 @@ p {
 		font-size: 50px;
 		border: 1px solid rgba(0, 0, 0, 0.8);
 		height: 100%;
+		margin-top: 1%;
+		margin-bottom: 1%;
 	}
 	.photo_grid {
 		display: grid;
