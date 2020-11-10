@@ -9,7 +9,7 @@
         grid-template-rows: repeat(3, 1fr);
         border: 1px solid black;
         margin-bottom: 1%;
-        background-color: #8fbcbb;
+        background-color: #5e81ac;
     }
 
     .nav_first_row {
@@ -65,8 +65,29 @@
     }
 
     .right_space {
+        display: flex;
         border: 1px solid black;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
     }
+
+    /* With this snippet you can fix the number
+    of element in a row with a fixed width */
+    .right_space > .projects {
+        flex: 1 1 160px;
+    }
+
+    .projects {
+        border: 1px solid black;
+        flex-grow: 1;
+        height: 33%;
+        margin: 1%;
+    }
+
+
+
 
     .footer {
         display: flex;
@@ -125,7 +146,26 @@
     }
 
     .right_space {
+        display: flex;
         border: 1px solid black;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+
+    /* With this snippet you can fix the number
+    of element in a row with a fixed width */
+    .right_space > .projects {
+        flex: 1 1 1 20px;
+    }
+
+    .projects {
+        display: flex;
+        border: 1px solid black;
+        flex-grow: 1;
+        height: 33%;
+        margin: 1%;
     }
 
     .footer {
