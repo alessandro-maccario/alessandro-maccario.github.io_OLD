@@ -1,20 +1,20 @@
 @media screen and (min-width: 360px) {
     html, body {
         height: 100%;
-        margin: 0;
     }
 
     .nav_bar {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin-bottom: 1%;
         background-color: #5e81ac;
+        border-radius: 25px;
     }
 
     .nav_first_row {
         display: flex;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin: 0px;
         justify-content: center;
         margin-bottom: 1%;
@@ -26,7 +26,7 @@
 
     .nav_second_row {
         display: flex;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin: 0px;
         justify-content: center;
         margin-bottom: 1%;
@@ -38,9 +38,11 @@
 
     .nav_link {
         display: flex;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin: 0px;
         justify-content: center;
+        font-family: 'Caveat', cursive;
+        font-size: 130%;
     }
 
     .nav_link a {
@@ -55,7 +57,7 @@
         flex-direction: column;
         grid-template-columns: 0.5fr 2fr;
         min-height: 100vh;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin-bottom: 1%;
     }
 
@@ -71,28 +73,22 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         list-style: none;
+        border-radius: 25px;
     }
 
-    /* With this snippet you can fix the number
-    of element in a row with a fixed width */
-    .right_space > .projects {
-        flex: 1 1 160px;
+    .description {
+        font-family: 'Prompt', sans-serif;
+        max-width: 500px;
     }
 
-    .projects {
-        border: 1px solid black;
-        flex-grow: 1;
-        height: 33%;
-        margin: 1%;
+    .description > .my_desc {
+        text-align: center;
     }
-
-
-
 
     .footer {
         display: flex;
         justify-content: center;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
     }
 }
 
@@ -104,25 +100,31 @@
     .nav_bar {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
-        border: 1px solid black;
+        /*border: 1px black;*/
         margin-bottom: 1%;
+        justify-content: right;
+        max-width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 25px;
     }
 
     .nav_first_row {
         margin-top: 1%;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
     }
     
     .nav_second_row {
         margin: 1% 0 1%;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
     }
 
     .nav_link {
         display: flex;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin: 0px;
         justify-content: center;
+        font-family: 'Caveat', cursive;
     }
 
     .nav_link a {
@@ -134,44 +136,41 @@
 
     .central_container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: 1fr;
         min-height: 100vh;
-        border: 1px solid black;
+        width: 100vh;
+        /*border: 1px solid black;*/
         margin-bottom: 1%;
+        margin-left: 25%;
+        border-radius: 25px
     }
 
     .left_space {
         border: 1px solid black;
         background-color: #e5e9f0;
+        display: none;
     }
 
     .right_space {
         display: flex;
         border: 1px solid black;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         list-style: none;
     }
 
-    /* With this snippet you can fix the number
-    of element in a row with a fixed width */
-    .right_space > .projects {
-        flex: 1 1 1 20px;
+    .description {
+        font-family: 'Prompt', sans-serif;
+        max-width: 500px;
     }
 
-    .projects {
-        display: flex;
-        border: 1px solid black;
-        flex-grow: 1;
-        height: 33%;
-        margin: 1%;
+    .description > .my_desc {
+        text-align: center;
     }
 
     .footer {
         display: flex;
         justify-content: center;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
     }
 
 }
