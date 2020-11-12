@@ -101,11 +101,11 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         /*border: 1px black;*/
-        margin-bottom: 1%;
+        margin: 1%;
         justify-content: right;
-        max-width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
+        max-width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
         border-radius: 25px;
     }
 
@@ -142,7 +142,7 @@
         /*border: 1px solid black;*/
         margin-bottom: 1%;
         margin-left: 25%;
-        border-radius: 25px
+        border-radius: 25px;
     }
 
     .left_space {
