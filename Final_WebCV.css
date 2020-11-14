@@ -8,8 +8,10 @@
         grid-template-rows: repeat(3, 1fr);
         /*border: 1px solid black;*/
         margin-bottom: 1%;
-        background-color: #5e81ac;
-        border-radius: 25px;
+        background-image: url(Images/Background/trianglify.png);
+        background-size: cover;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
     }
 
     .nav_first_row {
@@ -43,6 +45,7 @@
         justify-content: center;
         font-family: 'Caveat', cursive;
         font-size: 130%;
+        color: white;
     }
 
     .nav_link a {
@@ -73,7 +76,9 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         list-style: none;
-        border-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        min-height: 100vh;
     }
 
     .description {
@@ -106,7 +111,10 @@
         max-width: 50%;
         margin-left: 25%;
         margin-right: 25%;
-        border-radius: 25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        background-image: url(Images/Background/trianglify.png);
+        background-size: cover;
     }
 
     .nav_first_row {
@@ -132,17 +140,18 @@
         text-decoration: none;
         color: inherit;
         font-size: 150%;
+        color: white;
     }
 
     .central_container {
         display: grid;
         grid-template-columns: 1fr;
         min-height: 100vh;
-        width: 100vh;
         /*border: 1px solid black;*/
         margin-bottom: 1%;
+        max-width: 50%;
         margin-left: 25%;
-        border-radius: 25px;
+        margin-right: 25%
     }
 
     .left_space {
@@ -156,6 +165,8 @@
         border: 1px solid black;
         flex-direction: row;
         list-style: none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
 
     .description {
