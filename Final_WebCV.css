@@ -12,6 +12,7 @@
         background-size: cover;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     .nav_first_row {
@@ -79,6 +80,7 @@
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         min-height: 100vh;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     .description {
@@ -115,6 +117,7 @@
         border-top-right-radius: 25px;
         background-image: url(Images/Background/trianglify.png);
         background-size: cover;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     .nav_first_row {
@@ -167,6 +170,7 @@
         list-style: none;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     .description {
