@@ -90,6 +90,7 @@
 
     .description > .my_desc {
         text-align: center;
+        line-height: 22px;
     }
 
     .footer {
@@ -180,6 +181,7 @@
 
     .description > .my_desc {
         text-align: center;
+        line-height: 22px;
     }
 
     .footer {
