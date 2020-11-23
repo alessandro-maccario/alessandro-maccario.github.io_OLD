@@ -9,7 +9,7 @@
         grid-template-rows: repeat(3, 1fr);
         /*border: 1px solid black;*/
         margin-bottom: 1%;
-        background-image: url(Images/Background/trianglify.png);
+        background-image: url(../Images/Background/trianglify.png);
         background-size: cover;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
@@ -106,7 +106,7 @@
 
     .logo_images > img {
         padding: 2%;
-        /*border: 1px solid black;*/        
+        /*border: 1px solid black;*/
     }
 
     .footer {
@@ -123,7 +123,7 @@
     }
 
     body {
-        background: url(Images/Background/path40.png) no-repeat;
+        background: url(../Images/Background/path40.png) no-repeat;
         z-index: 0;
     }
 
@@ -146,7 +146,7 @@
         margin-top: 1%;
         /*border: 1px solid black;*/
     }
-    
+
     .nav_second_row {
         margin: 1% 0 1%;
         /*border: 1px solid black;*/
@@ -219,7 +219,7 @@
 
     .logo_images > img {
         padding: 2%;
-        /*border: 1px solid black;*/        
+        /*border: 1px solid black;*/
     }
 
 
