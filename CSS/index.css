@@ -66,7 +66,6 @@
         margin-bottom: 1%;
     }
 
-
     .right_space {
         display: flex;
         border: 1px solid black;
@@ -111,9 +110,19 @@
 
     .footer {
         display: flex;
-        justify-content: center;
+        height: 35px;
+        border-radius: 25px;
         font-family: 'Concert One', cursive;
         /*border: 1px solid black;*/
+        background: linear-gradient(35deg, #3499EB, #34EB9C);
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .footer p {
+      color: white;
     }
 }
 
@@ -126,7 +135,6 @@
         background: url(../Images/Background/path40.png) no-repeat;
         z-index: 0;
     }
-
 
     /* Overline Reveal */
     .hvr-overline-reveal {
@@ -218,7 +226,6 @@
         background-color: whitesmoke;
     }
 
-
     .right_space {
         display: flex;
         border: 1px solid black;
@@ -258,9 +265,21 @@
 
     .footer {
         display: flex;
-        justify-content: center;
+        max-width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        height: 35px;
+        border-radius: 25px;
         font-family: 'Concert One', cursive;
         /*border: 1px solid black;*/
+        background: linear-gradient(35deg, #3499EB, #34EB9C);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .footer p {
+      color: white;
     }
 
 }
