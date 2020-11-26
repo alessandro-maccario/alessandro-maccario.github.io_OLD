@@ -3,6 +3,10 @@
         height: 100%;
     }
 
+    body {
+        background: url(../Images/Background/dot-grid.png);
+        z-index: 0;
+    }
 
     .nav_bar {
         grid-template-columns: 1fr;
@@ -64,6 +68,7 @@
         min-height: 100vh;
         /*border: 1px solid black;*/
         margin-bottom: 1%;
+        background-color: whitesmoke;
     }
 
     .right_space {
@@ -132,8 +137,7 @@
     }
 
     body {
-        background: url(../Images/Background/path40.png) no-repeat;
-        z-index: 0;
+        background: url(../Images/Background/dot-grid.png);
     }
 
     /* Overline Reveal */
