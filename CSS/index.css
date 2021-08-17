@@ -13,7 +13,7 @@
         grid-template-rows: repeat(3, 1fr);
         /*border: 1px solid black;*/
         margin-bottom: 1%;
-        background-image: url(../Images/Background/trianglify.png);
+        /*background-image: url(../Images/Background/trianglify.png);*/
         background-size: cover;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
